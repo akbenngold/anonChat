@@ -8,6 +8,8 @@ import PageNotFound from "./pages/PageNotFound";
 import { IoSettingsOutline } from "react-icons/io5";
 import { BiMessageSquareDots } from "react-icons/bi";
 import { CgProfile } from "react-icons/cg";
+import Login from "./pages/Login";
+import Signup from "./pages/Signup";
 
 const App: React.FC = () => {
   return (
@@ -15,8 +17,10 @@ const App: React.FC = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/messages" element={<Messages />} />
-        <Route path="/profiles" element={<Profile />} />
+        <Route path="/profile" element={<Profile />} />
         <Route path="/settings" element={<Settings />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
         <Route path="/*" element={<PageNotFound />} />
       </Routes>
       <div className="btm-nav">
